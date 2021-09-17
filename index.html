@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetSail</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/000/511/437/small/TRAVEL_TOURISM_LOGO-02.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72d45711a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link"><span class="spantext"><i class="far fa-envelope mr-3"></i>setsail@qode.com</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="spantext"><i class="fas fa-phone mr-3 "></i>0438691300</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="spantext"><i class="fas fa-map-marker-alt mr-3"></i>Hà Nội Việt Nam Trái Đất </span></a>
+                </li>
+
+
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item hide-on-mobile-tablet">
+                    <a class="nav-link"><span class="spantext"><i class="fab fa-facebook-f"></i></span></a>
+                </li>
+                <li class="nav-item hide-on-mobile-tablet">
+                    <a class="nav-link"><span class="spantext"><i class="fab fa-twitter"></i></span></a>
+                </li>
+                <li class="nav-item hide-on-mobile-tablet">
+                    <a class="nav-link"><span class="spantext"><i class="fab fa-instagram"></i></span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="spantext">
+                            <i class="fas fa-globe-americas mr-3"></i>
+                            Ngôn ngữ
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-padding" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item mt-2 p-3" href="#">Tiếng Việt</a>
+                        <a class="dropdown-item mt-2 p-3" href="#">Tiếng Anh</a>
+                        <a class="dropdown-item mt-2 p-3" href="#">Tiếng Đông Lào</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mr-5 " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://st.quantrimang.com/photos/image/2020/06/19/Hinh-Nen-Meo-Ngao-50.jpg" alt="Avatar" class="avatar"><span class="user spantext">Nhóm 3 PHP</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-padding" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item mt-2 p-3" href="#" data-toggle="modal" data-target="#LoginModal">Chỉnh sửa hồ sơ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item mt-2 p-3" href="/users/logout">Đăng xuất</a>
+                    </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+    </nav>
+
+    <header class="py-2">
+        <div class="py-5 text-center">
+            <a href="/"><img class="d-block d-block-img mx-auto" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png" alt=""></a>
+
+        </div>
+        <ul class="nav justify-content-center nav-pills">
+            <li class="nav-item dropdown hide-on-mobile-tablet">
+                <a class=" dropdown-toggle header-link-a ml-5 mr-5 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown hide-on-mobile-tablet">
+                <a class=" dropdown-toggle header-link-a ml-5 mr-5 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown hide-on-mobile-tablet">
+                <a class=" dropdown-toggle header-link-a ml-5 mr-5  nav-item nav-margin" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+                </div>
+            </li>
+
+            <li class="dropdown nav-item hide-on-mobile-tablet">
+                <a href="#" class="dropdown-toggle header-link-a ml-5 mr-5" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown hide-on-mobile-tablet">
+                <a class=" dropdown-toggle header-link-a ml-5 mr-5 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown hide-on-mobile-tablet">
+                <a class=" dropdown-toggle header-link-a ml-5 mr-5 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mt-2 p-3" href="#">Action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Another action</a>
+                    <a class="dropdown-item mt-2 p-3" href="#">Something else here</a>
+
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div id="settingSkins" class="showSkin">
+        <div>
+            <ul>
+                <li onclick="changeBackground('#3F681C','#B8860B')" style="background: #3F681C;" class="tooltipSkin" data-toggle="tooltip" data-placement="top" title="" data-original-title=" "></li>
+                <li onclick="changeBackground('#F18D9E','#E6D72A')" style="background:#F18D9E" class="tooltipSkin" data-toggle="tooltip" data-placement="top" title="" data-original-title=""></li>
+                <li onclick="changeBackground('#BCBABE','#F1F1F2')" style="background:#BCBABE" class="tooltipSkin" data-toggle="tooltip" data-placement="top" title="" data-original-title=""></li>
+            </ul>
+            <i class="fa fa-cog tooltipSkin setting" data-toggle="tooltip" data-placement="right" title="" data-original-title="Chọn màu chủ đạo cho Website"></i>
+        </div>
+    </div>
+
+    <!-- social -->
+    <div id="fixed-social-network" class="medium--hide small--hide">
+        <a href="" class="fb-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="" class="ins-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="" class="yt-icon"><i class="fab fa-youtube"></i> Youtube</a>
+        <a href="" class="tw-icon"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="" class="gg-icon"><i class="fab fa-google-plus-g"></i> Google+</a>
+        <a href="" id="back-to-top" onclick="topFunction();"><i class="fa fa-angle-up" ></i> Top</a></div>
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide mb-4 py-2" data-ride="carousel">
+            <div class="carousel-inner mt-4">
+                <div class="carousel-item active">
+                    <img class="d-block w-100   " src="https://lazi.vn/uploads/users/avatar/1585320451_a0c50d933f7015aab3c0aef50d5eeffd.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Plzz</h5>
+                        <p>Buy me</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100  " src="https://i.pinimg.com/originals/d0/8c/97/d08c973226efc779bd9e72b382c23a27.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Plzz</h5>
+                        <p>Buy me</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100  " src="https://upanh123.com/wp-content/uploads/2020/09/f676521b471839e8428f79b94441d641.jpg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Plzz</h5>
+                        <p>Buy me</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="container px-4 px-lg-5 py-5 ">
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-5 col-lg-5"><img class="img-fluid mb-3 mb-lg-0" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-1.png" alt="..."></div>
+                <div class="col-xl-7 col-lg-7">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Our Popular Tours</h4>
+                        <p class="text-black-50 mb-0">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.</p>
+                    </div>
+
+                    <li class=" d-flex justify-content-between lh-condensed mb-2 mt-3">
+                        <span class="text-muted">Contry</span>
+                        <span class="text-muted">30%</span>
+                    </li>
+
+                    <div class="progress" style="height:20px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                        </div>
+                    </div>
+
+                    <li class=" d-flex justify-content-between lh-condensed mb-2 mt-3">
+                        <span class="text-muted">Vineyard</span>
+                        <span class="text-muted">91%</span>
+                    </li>
+
+                    <div class="progress" style="height:20px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width:91%">
+                        </div>
+                    </div>
+
+                    <li class=" d-flex justify-content-between lh-condensed mb-2 mt-3">
+                        <span class="text-muted">Wine Tasting
+                        </span>
+                        <span class="text-muted">96%</span>
+                    </li>
+
+                    <div class="progress" style="height:20px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width:96%">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-2.jpg" class="img-fluid mb-4 py-5" alt="Responsive image">
+
+        <div class="py-5 text-center">
+            <h1>The Best Tours
+            </h1>
+            <span class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+            <br>
+            <span class="lead">Aene an commodo ligula eget dolor. Aenean massa.</span>
+            <br>
+            <span>Cum sociis</span>
+
+        </div>
+
+        <div class="row mb-4">
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-33-650x650.jpg" class="img-fluid mb-4 img-a" alt="">
+
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-37-650x650.jpg" class="img-fluid mb-4 img-a" alt="" data-wow-delay="0.3s">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-34-650x650.jpg" class="img-fluid mb-4 img-a" alt="" data-wow-delay="0.1s">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-38-650x650.jpg" class="img-fluid mb-4 img-a" alt="" data-wow-delay="0.4s">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 ">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-35-650x1300.jpg" style="height: 100%;" class="img-fluid mb-4" alt="" data-wow-delay="0.2s">
+
+            </div>
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-36-650x650.jpg" class="img-fluid mb-4 img-a" alt="" data-wow-delay="0.2s">
+
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-39-650x650.jpg" class="img-fluid mb-4 img-a" alt="" data-wow-delay="0.5s">
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+
+        <div class="row mb-4 mt-4 py-5">
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <div class="py-5 text-center">
+                    <div id="counter">
+                        <div class="counter-value to" data-count="45">0</div>
+                    </div>
+                    <br>
+                    <span class="lead">Glasses of Wine</span>
+                    <br>
+                    <span class="lead-1">Cap at perspic iatis unde omnis iste natus</span>
+                    <br>
+                    <span class="lead-1">error sit volup tatem</span>
+
+                </div>
+
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <div class="py-5 text-center">
+                    <div id="counter">
+                        <div class="counter-value to" data-count="126">0</div>
+                    </div> <br>
+                    <span class="lead">Years of experience</span>
+                    <br>
+                    <span class="lead-1">Sop ut perspic iatis ande emnis iste</span>
+                    <br>
+                    <span class="lead-1">natus error sit volup fatom</span>
+
+                </div>
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-3 mb-4 ">
+                <div class="py-5 text-center">
+                    <div id="counter">
+                        <div class="counter-value to" data-count="452">0</div>
+                    </div> <br>
+                    <span class="lead">Unique Wines</span>
+                    <br>
+                    <span class="lead-1">Sed ut perspic iatis unde omnis iste</span>
+                    <br>
+                    <span class="lead-1">natus error sit volup tatem</span>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 mb-4">
+
+                <div class="py-5 text-center">
+                    <div id="counter">
+                        <div class="counter-value to" data-count="247">0</div>
+                    </div>
+                    <br>
+                    <span class="lead">Sorts of Wine</span>
+                    <br>
+                    <span class="lead-1">Cap of qerspic iatis ande umnis lcte</span>
+                    <br>
+                    <span class="lead-1">natus error sit volup fatem</span>
+
+                </div>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+
+        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-video-button-img.jpg" class="img-fluid mb-4" alt="Responsive image">
+
+        <div class="container px-4 px-lg-5 py-5">
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center py-5">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Our Popular Tours</h4>
+                        <p class="text-black-50 mb-0">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-4 mt-4">
+                            <div class="d-flex">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-1.png" class="img-fluid mb-4 " alt="">
+                                <p class="ml-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                            </div>
+
+
+                            <div class="d-flex">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-4.png" class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
+                                <p class="ml-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 mt-4">
+                            <div class="d-flex">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-3.png" class="img-fluid mb-4 " alt="">
+                                <p class="ml-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+
+
+                            </div>
+                            <div class="d-flex">
+                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-custom-img-2.png" class="img-fluid mb-4" alt="" data-wow-delay="0.3s">
+                                <p class="ml-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-5 col-lg-5 ">
+                    <img class="img-fluid mb-lg-0" style="width:300px" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/travel-img-3.png" alt="...">
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png" class="mt-4" alt="">
+                        <p>
+                            Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                        </p>
+                        <p>
+                            <a class="nav-link la"><i class="far fa-envelope mr-3"></i>setsail@qode.com</a>
+                        </p>
+                        <p>
+                            <a class="nav-link la" href="#"><i class="fas fa-phone mr-3 "></i>0912 ngày mai nói tiếp  </a>
+
+                        </p>
+                        <p>
+                            <a class="nav-link la" href="#"><i class="fas fa-map-marker-alt mr-3"></i>Hà Nội Việt Nam Trái Đất </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 mt-30">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 mt-4">
+                            Our Recent Posts
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Visit Thailand, Bali And China</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">September 7, 2016</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">The Sound Of Our Jungle</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">September 7, 2016</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">New Year, New Resolutions!</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">September 7, 2016</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 mt-4">
+                            Subscribe to our Newsletter
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</a>
+                        </p>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Name" required>
+                                </div>
+
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="far fa-envelope "></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="submit" value="Subscribe" class="btn ">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 hide-on-tablet">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 mt-4">
+                            Our Instagram
+                        </h6>
+                        <p style="color: white;">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Được làm bởi nhóm ...
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content margin-modal">      
+                <div class="container">    
+                    <div class="card-body">
+                        <div class="login-heading">
+                            <span class="login-text">LOGIN</span>
+                        </div>
+                        <form action="#" id="loginform" name="loginform" onsubmit="return validateForm()">
+                            
+                            <div class="input-group form-group">
+                                <div class="input-group-email">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group" id="show_hide_password">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        placeholder="Mật khẩu">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><a class="eye"><i class="fa fa-eye-slash"
+                                                    aria-hidden="true"></i></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Ghi nhớ tôi
+                            </div>
+        
+                            <div class="form-group">
+                                <input type="submit" value="Đăng nhập" class="form-control btn float-right login_btn">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            Đã có tài khoản?<a href="#">Đăng ký</a>
+                        </div>
+        
+                    </div>                   
+                </div>           
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var a = 0;
+    $(window).scroll(function() {
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-value').each(function() {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                        countNum: countTo
+                    },
+
+                    {
+
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            a = 1;
+        }
+
+    });
+
+    function changeBackground(color1, color2) {
+        document.body.style.background = color1;
+        var header = document.querySelector('header')
+        header.style.backgroundColor = color2;
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    $(document).ready(function() {
+        $("#show_hide_password a").on('click', function(event) {
+            event.preventDefault();
+            if ($('#show_hide_password input').attr("type") == "text") {
+                $('#show_hide_password input').attr('type', 'password');
+                $('.input-group-prepend i').addClass("fa-eye-slash");
+                $('.input-group-prepend i').removeClass("fa-eye");
+            } else if ($('#show_hide_password input').attr("type") == "password") {
+                $('#show_hide_password input').attr('type', 'text');
+                $('.input-group-prepend i').removeClass("fa-eye-slash");
+                $('.input-group-prepend i').addClass("fa-eye");
+                }
+        });
+    });
+
+    function validateForm() {
+        var re_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var re_password = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+
+        if (document.loginform.email.value == '') {
+            alert('Please enter your email !');
+            document.loginform.email.focus();
+            return false;
+        } else if (!document.loginform.email.value.match(re_email)) {
+            alert("Your email is invalid !");
+            document.loginform.email.focus();
+            return false;
+        }
+        if (document.loginform.password.value == '') {
+            alert('Please enter your password !');
+            document.loginform.password.focus();
+            return false;
+        } 
+        else if (!document.loginform.password.value.match(re_password)) {
+            alert("Your password is invalid ! (Password must contain 1 number, 1 uppercase letter, 1 lowercase letter and at least 8 characters)");
+            document.loginform.password.focus();
+            return false;
+        } 
+    }
+</script>
+
+</html>
