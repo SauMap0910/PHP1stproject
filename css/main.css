@@ -350,7 +350,9 @@ ol {
     }
 }
 
+
 /* Login Modal */
+
 .login-heading {
     display: flex;
     justify-content: center;
@@ -401,6 +403,7 @@ ol {
     background-color: #FFC312;
     color: black;
     border: 0 !important;
+    border-radius: 0px !important;
 }
 
 .input-group-email span {
@@ -447,4 +450,16 @@ input:focus {
 
 #loginform {
     margin-top: 12px;
+}
+
+.header-a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-a:hover {
+    text-decoration: none;
+    color: aquamarine !important;
+    transition: all 0.3s ease-in !important;
+    cursor: pointer;
 }
